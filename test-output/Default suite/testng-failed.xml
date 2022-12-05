@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="setup.RunnerFile">
+      <class name="testNGPapametersWithExcel.TestCase">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
-          <include name="tearDownClass"/>
+          <include name="login"/>
+          <include name="CreatLead"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- setup.RunnerFile -->
+      </class> <!-- testNGPapametersWithExcel.TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

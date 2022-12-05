@@ -1,23 +1,24 @@
-package wait;
+package aui_keyboard;
 
-import java.util.concurrent.TimeUnit;
-
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Wait_ImplicitlyWait {
+public class Tab {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://leaftaps.com/opentaps/control/main");
-		
 		driver.findElementById("username").sendKeys("DemoCSR");
 		driver.findElementById("password").sendKeys("crmsfa");
-		driver.findElementByClassName("decorativeSubmit").click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Actions action = new Actions (driver);
+		action.sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
 		driver.close();
+		
 		
 
 	}
