@@ -1,4 +1,4 @@
-package interface_selenium;
+package frameWork_Interface_Selenium_;
 
 import org.testng.annotations.Test;
 

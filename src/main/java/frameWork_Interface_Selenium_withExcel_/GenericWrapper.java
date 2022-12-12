@@ -1,18 +1,22 @@
-package interface_selenium;
+package frameWork_Interface_Selenium_withExcel_;
+
+import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.DataProvider;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class GenericWrapper implements WrapperMethod{
+public class GenericWrapper implements WrapperMethod {
+ChromeDriver driver;
 
-public	ChromeDriver driver;
-
-	public void login(String url) {
+	public void login(String url) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+	    driver = new ChromeDriver();
 		driver.get(url);
+		Thread.sleep(3000);
 		
 	}
 
@@ -46,11 +50,23 @@ public	ChromeDriver driver;
 		
 	}
 
-	public void chooseVisibleTextById(String locator, String value) {
+	public void chooseById(String locator, String Value) {
 		WebElement ele = driver.findElementById(locator);
 		Select dd = new Select(ele);
-		dd.selectByVisibleText(value);
+		dd.selectByVisibleText(Value);
 		
 	}
+
+	public void clickByLinkText(String locator) {
+		driver.findElementByLinkText(locator).click();
+		
+	}
+	
+	@DataProvider
+	public String[][]getData() throws IOException{
+		ReadExcel re =new ReadExcel();
+		return re.readExcel();
+	}
+
 
 }

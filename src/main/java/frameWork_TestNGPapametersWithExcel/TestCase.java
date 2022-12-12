@@ -1,4 +1,4 @@
-package testNGPapametersWithExcel;
+package frameWork_TestNGPapametersWithExcel;
 
 import org.testng.annotations.Test;
 

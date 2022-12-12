@@ -1,4 +1,4 @@
-package testNGPapametersWithExcel;
+package frameWork_TestNGPapametersWithExcel;
 
 import java.io.IOException;
 
