@@ -1,4 +1,4 @@
-package frameWork_Interface_Selenium_withExcel_;
+package frameWork_Interface_Selenium_withDataProvider;
 
 import org.testng.annotations.Test;
 
