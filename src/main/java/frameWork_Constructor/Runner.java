@@ -1,4 +1,4 @@
-package framework_Constructor;
+package frameWork_Constructor;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
