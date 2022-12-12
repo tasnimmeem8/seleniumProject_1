@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="pw" value="crmsfa"/>
-  <parameter name="un" value="DemoCSR"/>
-  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="collection_Selenium.DP_TestCase_for_HashMap">
+      <class name="parallal_Selenium.CreatAccount">
         <methods>
+          <include name="creatAccount"/>
           <include name="login"/>
-          <include name="CreatLead"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- collection_Selenium.DP_TestCase_for_HashMap -->
+      </class> <!-- parallal_Selenium.CreatAccount -->
+      <class name="parallal_Selenium.CreateContact">
+        <methods>
+          <include name="login"/>
+          <include name="createContact"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- parallal_Selenium.CreateContact -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
