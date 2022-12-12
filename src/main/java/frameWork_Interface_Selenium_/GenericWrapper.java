@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class GenericWrapper implements WrapperMethod{
+public class GenericWrapper implements WrapperMethod_100prsnt_Abstraction{
 
 public	ChromeDriver driver;
 

@@ -1,6 +1,6 @@
 package frameWork_Interface_Selenium_;
 
-public interface WrapperMethod {
+public interface WrapperMethod_100prsnt_Abstraction {
 	
 	public void login(String url);
 	public void enterById(String locator, String data);
