@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-12T02:34:49 EST" name="Default suite" finished-at="2022-12-12T02:35:00 EST" duration-ms="10699">
+  <suite started-at="2022-12-12T02:36:09 EST" name="Default suite" finished-at="2022-12-12T02:36:38 EST" duration-ms="28063">
     <groups>
     </groups>
-    <test started-at="2022-12-12T02:34:49 EST" name="Default test" finished-at="2022-12-12T02:35:00 EST" duration-ms="10699">
+    <test started-at="2022-12-12T02:36:09 EST" name="Default test" finished-at="2022-12-12T02:36:38 EST" duration-ms="28063">
       <class name="framework_Constructor.Runner">
-        <test-method signature="leafTapsTestCase()[pri:0, instance:framework_Constructor.Runner@61d6015a]" started-at="2022-12-12T02:34:49 EST" name="leafTapsTestCase" finished-at="2022-12-12T02:35:00 EST" duration-ms="10677" status="PASS">
+        <test-method signature="leafTapsTestCase()[pri:0, instance:framework_Constructor.Runner@61d6015a]" started-at="2022-12-12T02:36:10 EST" name="leafTapsTestCase" finished-at="2022-12-12T02:36:38 EST" duration-ms="28040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- leafTapsTestCase -->
